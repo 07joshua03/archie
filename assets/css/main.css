@@ -27,7 +27,8 @@ body{
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: Open Sans, Roboto, sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
   /* font-size: 1.125em; */
   line-height: 1.5;
 }
@@ -51,8 +52,9 @@ a {
   text-decoration: none;
 }
 a:hover {
-    background-color: var(--hovercolor);
-    color: #fff;
+  border-bottom: 0.125rem dashed var(--bordercl);
+    /* background-color: var(--hovercolor); */
+    /* color: #fff; */
 }
 
 ul {
@@ -112,10 +114,10 @@ pre {
   padding: 1em;
 }
 
-.highlight pre ::selection {
-  background: rgba(255, 255, 255, 0.2);
-  color: inherit;
-}
+/* .highlight pre ::selection { */
+/*   background: rgba(255, 255, 255, 0.2); */
+/*   color: inherit; */
+/* } */
 
 pre code {
   background-color: transparent;

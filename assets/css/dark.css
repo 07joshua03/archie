@@ -4,13 +4,13 @@ body {
 }
 
 ::-moz-selection {
-  background: blue;
+  background: var(--darkMaincolor);
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: red;
+  background: var(--darkMaincolor);
   color: #fff;
   text-shadow: none;
 }
@@ -19,8 +19,8 @@ hr {
   border-top: 2px dotted var(--darkMaincolor);
 }
 code {
-  background-color: lightblue;
-  color: black;
+  background-color: #343444;
+  /* color: black; */
   text-decoration: bold;
   padding: 0.1em 0.2em;
 }
@@ -67,8 +67,9 @@ a {
   color: inherit;
 }
 a:hover {
-  background-color: var(--darkMaincolor);
-  color: black;
+  border-bottom: 0.125rem dashed var(--bordercl);
+  /* background-color: var(--darkMaincolor); */
+  /* color: black; */
 }
 
 .site-description a {
