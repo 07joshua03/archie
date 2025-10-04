@@ -16,7 +16,7 @@ body {
 }
 
 hr {
-  border-top: 3px dotted blue;
+  border-top: 2px dotted var(--darkMaincolor);
 }
 code {
   background-color: lightblue;
@@ -31,7 +31,13 @@ pre {
   padding: 1em;
 }
 blockquote {
-  border-color: blue;
+  border-color: var(--darkMaincolor);
+}
+
+time,
+.meta,
+blockquote {
+  color: #bbb;
 }
 
 h1,
@@ -42,29 +48,13 @@ h5,
 h6 {
   color: #ddd;
 }
-h1::before {
-  color: var(--darkMaincolor);
-  content: "# ";
-}
-h2::before {
-  color: var(--darkMaincolor);
-  content: "## ";
-}
-h3::before {
-  color: var(--darkMaincolor);
-  content: "### ";
-}
-h4::before {
-  color: var(--darkMaincolor);
-  content: "#### ";
-}
-h5::before {
-  color: var(--darkMaincolor);
-  content: "##### ";
-}
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
 h6::before {
   color: var(--darkMaincolor);
-  content: "###### ";
 }
 
 .toc {
@@ -73,7 +63,7 @@ h6::before {
 }
 
 a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 0.125rem dashed var(--darkMaincolor);
   color: inherit;
 }
 a:hover {
